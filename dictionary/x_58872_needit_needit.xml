@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="task" label="Needit" max_length="40" name="x_58872_needit_needit" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" default="legal 1" label="Whatchoo want" mandatory="true" max_length="40" name="u_choice_6" type="string">
+            <choice>
+                <element inactive="true" inactive_on_update="true" label="Choice 1" sequence="0" value="Choice 1"/>
+                <element inactive_on_update="false" label="Human" sequence="0" value="hr"/>
+                <element inactive="true" inactive_on_update="true" label="Choice 2" sequence="1" value="Choice 2"/>
+                <element inactive_on_update="false" label="hr 2" sequence="1" value="hr2"/>
+                <element inactive="true" inactive_on_update="true" label="Choice 3" sequence="2" value="Choice 3"/>
+                <element inactive_on_update="false" label="Futilities 1" sequence="2" value="futilities 1"/>
+                <element inactive_on_update="false" label="Futilities 2" sequence="3" value="futilities2"/>
+                <element inactive_on_update="false" label="Legal 1" sequence="4" value="legal 1"/>
+                <element inactive_on_update="false" label="Legal 2" sequence="5" value="legal 2"/>
+            </choice>
+        </element>
+        <element label="Requested for" mandatory="true" max_length="32" name="u_requested_for" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="illegal" label="Request Teeyipe" mandatory="true" max_length="40" name="u_request_tyep" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Human Sacrifice" sequence="0" value="hr"/>
+                <element inactive_on_update="false" label="Faultycilities" sequence="1" value="faultycilities"/>
+                <element inactive_on_update="false" label="Illegal" sequence="2" value="illegal"/>
+                <element inactive_on_update="false" label="Your Department choice" sequence="3" value="your_choice"/>
+            </choice>
+        </element>
+        <element label="When needed hum?" mandatory="true" max_length="40" name="u_when_needed" type="glide_date_time"/>
+    </element>
+</database>
